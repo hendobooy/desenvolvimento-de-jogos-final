@@ -28,8 +28,12 @@ export class Input {
     this.padPrev = new Set();
     this.lastDevice = 'keyboard';
     this.seq = []; // últimas direções apertadas (para o código secreto)
+    this.typed = ''; // últimas teclas digitadas (para o código "digolei")
 
     addEventListener('keydown', (e) => {
+      if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        this.typed = (this.typed + e.key.toLowerCase()).slice(-16);
+      }
       const acts = KEYMAP[e.code];
       if (!acts) return;
       if (e.code === 'Space' || e.code.startsWith('Arrow') || e.code === 'Backspace') e.preventDefault();
@@ -87,6 +91,13 @@ export class Input {
       return true;
     }
     return false;
+  }
+
+  /** true uma única vez quando "digolei" acabou de ser digitado */
+  unlockCodeEntered() {
+    if (!this.typed.endsWith('digolei')) return false;
+    this.typed = '';
+    return true;
   }
 
   isDown(a) {

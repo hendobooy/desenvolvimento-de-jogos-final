@@ -271,6 +271,20 @@ export class Game {
     });
   }
 
+  unlockAll() {
+    this.progress.unlocked = LEVELS.length;
+    this.saveBest();
+    this.audio.unlock();
+    this.audio.sfx('powerup');
+    this.ui.toast('Todas as fases foram liberadas!', {
+      title: 'CÓDIGO SECRETO: TUDO LIBERADO 🔓',
+      color: '#ffd966',
+      time: 3.5,
+    });
+    if (this.state === 'title') this.showTitle();
+    else if (this.state === 'levels') this.showLevels();
+  }
+
   // ======================================================
   //  Telas e transições
   // ======================================================
@@ -644,6 +658,7 @@ export class Game {
     const input = this.input;
     input.poll();
     if (input.cheatEntered()) this.toggleCheat();
+    if (input.unlockCodeEntered()) this.unlockAll();
     const consumed = this.ui.update(dt, input);
     if (!consumed) this.globalInput();
 

@@ -6,7 +6,7 @@ Cada fase mistura **quebra-cabeças** (interruptores que trocam blocos, portões
 
 ![Gameplay](docs/screenshots/gameplay.gif)
 
-**▶ Jogar online:** https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/ *(troque pelo link do GitHub Pages do grupo)*
+**▶ Jogar online:** https://desenvolvimento-de-jogos-final.vercel.app/
 
 ---
 
@@ -67,10 +67,10 @@ Os desafios seguem o método *ensinar → testar → variar* (ver [Pesquisa de d
 
 | Estação | Fase | Ambientação | Novidades | Responsável |
 |---|---|---|---|---|
-| Primavera | **Campo Florido** | campo verde e árvores | tutorial com janelas de dica, interruptor, portão de monstros, Gosma, Caracol (vira casco), Abelha, muralha de tijolos, escada, chave e cadeado, mola, primeira estrela | Integrante 1 |
-| Verão | **Dunas Douradas** | deserto com pirâmides, palmeiras e cactos | cactos que espetam, Rato veloz, Minhoca, Gosma de Fogo (só cai com pedrada), Serra, blocos Esmagadores, duas estrelas seguidas | Integrante 2 |
-| Outono | **Vale das Abóboras** | entardecer de outono, plantações de abóbora, lanternas, celeiro | cordas para escalar, Planta Boca-Roxa (só cai com abóbora arremessada), Sapo saltador, Joaninha que voa, porteira trancada | Integrante 3 |
-| Inverno | **Picos Nevados** | vila de chalés na neve, lagos gelados, neve caindo | gelo escorregadio, Peixe que salta do lago, Bloco Saltitante, Gosma Espinhosa, bolas de neve infinitas e o **chefe Rei Knut** | Integrante 4 |
+| Primavera | **Campo Florido** | campo verde e árvores | tutorial com janelas de dica, interruptor, portão de monstros, Gosma, Caracol (vira casco), Abelha, muralha de tijolos, escada, chave e cadeado, mola, primeira estrela | Pedro Lucas |
+| Verão | **Dunas Douradas** | deserto com pirâmides, palmeiras e cactos | cactos que espetam, Rato veloz, Minhoca, Gosma de Fogo (só cai com pedrada), Serra, blocos Esmagadores, duas estrelas seguidas | Felipe Ribeiro (`felips2ribeiro`) |
+| Outono | **Vale das Abóboras** | entardecer de outono, plantações de abóbora, lanternas, celeiro | cordas para escalar, Planta Boca-Roxa (só cai com abóbora arremessada), Sapo saltador, Joaninha que voa, porteira trancada | `hendobooy` |
+| Inverno | **Picos Nevados** | vila de chalés na neve, lagos gelados, neve caindo | gelo escorregadio, Peixe que salta do lago, Bloco Saltitante, Gosma Espinhosa, bolas de neve infinitas e o **chefe Rei Knut** | `GabrielKrepker` |
 
 | | |
 |---|---|
@@ -152,8 +152,8 @@ Nenhuma imagem, som ou música foi gerada por IA ou desenhada por código. Detal
 
 ### Rodando localmente
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-cd NOME-DO-REPOSITORIO
+git clone https://github.com/hendobooy/desenvolvimento-de-jogos-final.git
+cd desenvolvimento-de-jogos-final
 npm install
 npm run dev
 ```
@@ -169,7 +169,7 @@ Não abra o `index.html` com duplo clique: os navegadores bloqueiam módulos e a
 ### Publicação no GitHub Pages (link jogável)
 O repositório já tem o workflow `.github/workflows/deploy.yml`.
 1. No GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. Faça um push na branch `main`. Em cerca de 1 minuto o jogo fica em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
+2. Faça um push na branch `main`. Em cerca de 1 minuto o jogo fica em `https://hendobooy.github.io/desenvolvimento-de-jogos-final/`.
 
 ### Dependências
 | Pacote | Versão | Uso |
@@ -189,7 +189,7 @@ O repositório já tem o workflow `.github/workflows/deploy.yml`.
 │   ├── main.js              # carrega os assets e inicia o jogo
 │   ├── style.css            # HUD, menus e diálogos
 │   ├── credits.js           # nomes do grupo
-│   ├── core/                # MOTOR (Integrante 1)
+│   ├── core/                # MOTOR (Pedro Lucas)
 │   │   ├── Game.js          # estados, laço principal, câmera, colisões
 │   │   ├── Level.js         # mapa ASCII → tiles (autotiling), blocos, decoração
 │   │   ├── TileMap.js       # junta os tiles numa única malha
@@ -207,11 +207,11 @@ O repositório já tem o workflow `.github/workflows/deploy.yml`.
 │   │   ├── Enemy.js         # classe base dos inimigos
 │   │   └── Items.js         # moeda, coração, chave, cristal, mola, estrela, interruptor, dica, arremessáveis
 │   ├── enemies/
-│   │   ├── basicos.js       # Gosma, Caracol, Abelha            (Integrante 1)
-│   │   ├── deserto.js       # Rato, Minhoca, Gosma de Fogo...    (Integrante 2)
-│   │   ├── outono.js        # Sapo, Joaninha, Planta, Mosca      (Integrante 3)
-│   │   ├── neve.js          # Bloco Saltitante, Peixe...         (Integrante 4)
-│   │   └── chefe.js         # Rei Knut                        (Integrante 4)
+│   │   ├── basicos.js       # Gosma, Caracol, Abelha            (Pedro Lucas)
+│   │   ├── deserto.js       # Rato, Minhoca, Gosma de Fogo...    (Felipe Ribeiro)
+│   │   ├── outono.js        # Sapo, Joaninha, Planta, Mosca      (hendobooy)
+│   │   ├── neve.js          # Bloco Saltitante, Peixe...         (GabrielKrepker)
+│   │   └── chefe.js         # Rei Knut                        (GabrielKrepker)
 │   └── levels/
 │       ├── index.js         # encontra as fases sozinho
 │       ├── fase0-campo.js
@@ -256,9 +256,9 @@ map: [
 
 | Integrante | Responsabilidade |
 |---|---|
-| Integrante 1 | Motor do jogo (física, câmera, áudio, interface, mecânicas do Hans) e Campo Florido |
-| Integrante 2 | Dunas Douradas e seus inimigos |
-| Integrante 3 | Vale das Abóboras e seus inimigos |
-| Integrante 4 | Picos Nevados, seus inimigos e o chefe Rei Knut |
+| Pedro Lucas | Motor do jogo (física, câmera, áudio, interface, mecânicas do Hans) e Campo Florido |
+| Felipe Ribeiro (`felips2ribeiro`) | Dunas Douradas e seus inimigos |
+| `hendobooy` | Vale das Abóboras e seus inimigos |
+| `GabrielKrepker` | Picos Nevados, seus inimigos e o chefe Rei Knut |
 
 Trabalho da disciplina de Desenvolvimento de Jogos, 2026. Código sob licença MIT; assets sob as licenças listadas em [CREDITS.md](CREDITS.md).
