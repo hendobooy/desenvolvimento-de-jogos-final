@@ -3,7 +3,7 @@ export const GROUP = [
   { name: 'Pedro Lucas', role: 'Motor do jogo, controles e Campo Florido (primavera)' },
   { name: 'Felipe Ribeiro', role: 'Dunas Douradas (verão / deserto)' },
   { name: 'Artur Felipe', role: 'Vale das Abóboras (outono)' },
-  { name: 'GabrielKrepker', role: 'Picos Nevados (inverno) e o Rei Knut' },
+  { name: 'Gabriel Krepker', role: 'Picos Nevados (inverno) e o Rei Knut' },
 ];
 
 export const COURSE = 'Trabalho de Desenvolvimento de Jogos, 2026';

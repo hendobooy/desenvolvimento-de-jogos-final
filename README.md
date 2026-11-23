@@ -68,9 +68,9 @@ Os desafios seguem o método *ensinar → testar → variar* (ver [Pesquisa de d
 | Estação | Fase | Ambientação | Novidades | Responsável |
 |---|---|---|---|---|
 | Primavera | **Campo Florido** | campo verde e árvores | tutorial com janelas de dica, interruptor, portão de monstros, Gosma, Caracol (vira casco), Abelha, muralha de tijolos, escada, chave e cadeado, mola, primeira estrela | Pedro Lucas |
-| Verão | **Dunas Douradas** | deserto com pirâmides, palmeiras e cactos | cactos que espetam, Rato veloz, Minhoca, Gosma de Fogo (só cai com pedrada), Serra, blocos Esmagadores, duas estrelas seguidas | Felipe Ribeiro (`felips2ribeiro`) |
-| Outono | **Vale das Abóboras** | entardecer de outono, plantações de abóbora, lanternas, celeiro | cordas para escalar, Planta Boca-Roxa (só cai com abóbora arremessada), Sapo saltador, Joaninha que voa, porteira trancada | Artur Felipe (`hendobooy`) |
-| Inverno | **Picos Nevados** | vila de chalés na neve, lagos gelados, neve caindo | gelo escorregadio, Peixe que salta do lago, Bloco Saltitante, Gosma Espinhosa, bolas de neve infinitas e o **chefe Rei Knut** | `GabrielKrepker` |
+| Verão | **Dunas Douradas** | deserto com pirâmides, palmeiras e cactos | cactos que espetam, Rato veloz, Minhoca, Gosma de Fogo (só cai com pedrada), Serra, blocos Esmagadores, duas estrelas seguidas | Felipe Ribeiro |
+| Outono | **Vale das Abóboras** | entardecer de outono, plantações de abóbora, lanternas, celeiro | cordas para escalar, Planta Boca-Roxa (só cai com abóbora arremessada), Sapo saltador, Joaninha que voa, porteira trancada | Artur Felipe |
+| Inverno | **Picos Nevados** | vila de chalés na neve, lagos gelados, neve caindo | gelo escorregadio, Peixe que salta do lago, Bloco Saltitante, Gosma Espinhosa, bolas de neve infinitas e o **chefe Rei Knut** | Gabriel Krepker |
 
 | | |
 |---|---|
@@ -210,8 +210,8 @@ O repositório já tem o workflow `.github/workflows/deploy.yml`.
 │   │   ├── basicos.js       # Gosma, Caracol, Abelha            (Pedro Lucas)
 │   │   ├── deserto.js       # Rato, Minhoca, Gosma de Fogo...    (Felipe Ribeiro)
 │   │   ├── outono.js        # Sapo, Joaninha, Planta, Mosca      (Artur Felipe)
-│   │   ├── neve.js          # Bloco Saltitante, Peixe...         (GabrielKrepker)
-│   │   └── chefe.js         # Rei Knut                        (GabrielKrepker)
+│   │   ├── neve.js          # Bloco Saltitante, Peixe...         (Gabriel Krepker)
+│   │   └── chefe.js         # Rei Knut                        (Gabriel Krepker)
 │   └── levels/
 │       ├── index.js         # encontra as fases sozinho
 │       ├── fase0-campo.js
@@ -257,8 +257,8 @@ map: [
 | Integrante | Responsabilidade |
 |---|---|
 | Pedro Lucas | Motor do jogo (física, câmera, áudio, interface, mecânicas do Hans) e Campo Florido |
-| Felipe Ribeiro (`felips2ribeiro`) | Dunas Douradas e seus inimigos |
-| Artur Felipe (`hendobooy`) | Vale das Abóboras e seus inimigos |
-| `GabrielKrepker` | Picos Nevados, seus inimigos e o chefe Rei Knut |
+| Felipe Ribeiro | Dunas Douradas e seus inimigos |
+| Artur Felipe | Vale das Abóboras e seus inimigos |
+| Gabriel Krepker | Picos Nevados, seus inimigos e o chefe Rei Knut |
 
 Trabalho da disciplina de Desenvolvimento de Jogos, 2026. Código sob licença MIT; assets sob as licenças listadas em [CREDITS.md](CREDITS.md).
